@@ -14,7 +14,7 @@ move in both clockwise and counterclockwise direction, and in the goal state, al
 square surfaces on each side of the cube will have the same color. We are going to use
 an AI technique to solve Rubik’s Cube problem starting from a random initial state.
 
-AI techniques:Heuristic Search. (Korf’s algorithm: iterative-deepening-A* search)
+AI techniques: Heuristic Search. (Korf’s algorithm: iterative-deepening-A* search)
 Simulated annealing algorithm.
 Kociemba algorithm (2-phase algorithm)
 Deep Reinforcement Learning,artificial neural network, approximate value

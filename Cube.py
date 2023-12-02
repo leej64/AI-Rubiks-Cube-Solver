@@ -1,6 +1,7 @@
 # Created by Junwon Lee 2023-12-01
 
 import random
+from tqdm import tqdm
 
 """
                [2]
@@ -25,124 +26,134 @@ import random
 COMMAND = [('U', 'C'), ('U', "CC"), ('D', 'C'), ('D', "CC"), ('F', 'C'), ('F', "CC"),
             ('B', 'C'), ('B', "CC"), ('L', 'C'), ('L', "CC"), ('R', 'C'), ('R', "CC")]
 
+GOALSTATE = [[['R','R','R'], ['R','R','R'], ['R','R','R']], 
+             [['Y','Y','Y'], ['Y','Y','Y'], ['Y','Y','Y']],
+             [['W','W','W'], ['W','W','W'], ['W','W','W']],
+             [['G','G','G'], ['G','G','G'], ['G','G','G']],
+             [['B','B','B'], ['B','B','B'], ['B','B','B']],
+             [['O','O','O'], ['O','O','O'], ['O','O','O']]]
 
-# prints out cube in planar figure
-def printCube(cube):
-    # prints out upper dimension
-    for i in range(3):
-        print("    ", end="")
-        for j in range(3):
-            print(cube[2][i][j], end="")
-        print()
+THRESHOLD = 26
 
-    # prints out side dimensions
-    for i in range(3):
-        for k in range(4):
+class Cube:
+    def __init__(self, state = GOALSTATE):
+        self.state = state
+
+    def getState(self):
+        return self.state
+    
+    def setState(self, state):
+        self.state = state
+
+    # prints out cube in planar figure
+    def printState(self):
+        # prints out upper dimension
+        for i in range(3):
+            print("    ", end="")
             for j in range(3):
-                if k == 0:
-                    print(cube[3][i][j], end="")
-                elif k == 1:
-                    print(cube[0][i][j], end="")
-                elif k == 2:
-                    print(cube[4][i][j], end="")
-                elif k == 3:
-                    print(cube[5][i][j], end="")
-            print (" ", end="")
+                print(self.state[2][i][j], end="")
+            print()
+
+        # prints out side dimensions
+        for i in range(3):
+            for k in range(4):
+                for j in range(3):
+                    if k == 0:
+                        print(self.state[3][i][j], end="")
+                    elif k == 1:
+                        print(self.state[0][i][j], end="")
+                    elif k == 2:
+                        print(self.state[4][i][j], end="")
+                    elif k == 3:
+                        print(self.state[5][i][j], end="")
+                print (" ", end="")
+            print()
+
+        # prints out down dimension
+        for i in range(3):
+            print("    ", end="")
+            for j in range(3):
+                print(self.state[1][i][j], end="")
+            print()
         print()
 
-    # prints out down dimension
-    for i in range(3):
-        print("    ", end="")
-        for j in range(3):
-            print(cube[1][i][j], end="")
-        print()
-    print()
 
-# handles change within dimension after a turn
-def moveDimension(cube, dimension):
-    for _ in range(2):
-        temp = cube[dimension][0][0]
-        cube[dimension][0][0] = cube[dimension][1][0]
-        cube[dimension][1][0] = cube[dimension][2][0]
-        cube[dimension][2][0] = cube[dimension][2][1]
-        cube[dimension][2][1] = cube[dimension][2][2]
-        cube[dimension][2][2] = cube[dimension][1][2]
-        cube[dimension][1][2] = cube[dimension][0][2]
-        cube[dimension][0][2] = cube[dimension][0][1]
-        cube[dimension][0][1] = temp
+    # handles change within dimension after a turn
+    def moveDimension(self, state, dimension):
+        for _ in range(2):
+            temp = state[dimension][0][0]
+            state[dimension][0][0] = state[dimension][1][0]
+            state[dimension][1][0] = state[dimension][2][0]
+            state[dimension][2][0] = state[dimension][2][1]
+            state[dimension][2][1] = state[dimension][2][2]
+            state[dimension][2][2] = state[dimension][1][2]
+            state[dimension][1][2] = state[dimension][0][2]
+            state[dimension][0][2] = state[dimension][0][1]
+            state[dimension][0][1] = temp
 
-# handles changes with different dimension after a turn
-# turns selected dimension into clockwise direction
-def move(cube, dimension):
-    if dimension == 'U':
-        temp = cube[0][0]
-        cube[0][0] = cube[4][0]
-        cube[4][0] = cube[5][0]
-        cube[5][0] = cube[3][0]
-        cube[3][0] = temp
-        moveDimension(cube,2)
-        
-    elif dimension == 'D': 
-        temp = cube[0][2]
-        cube[0][2] = cube[3][2]
-        cube[3][2] = cube[5][2]
-        cube[5][2] = cube[4][2]
-        cube[4][2] = temp
-        moveDimension(cube,1)
-        
-    elif dimension == 'F': 
-        temp = cube[2][2]
-        cube[2][2] = [cube[3][2][2], cube[3][1][2], cube[3][0][2]]
-        cube[3][0][2], cube[3][1][2], cube[3][2][2] = cube[1][0]
-        cube[1][0] = [cube[4][2][0], cube[4][1][0], cube[4][0][0]]
-        cube[4][0][0], cube[4][1][0], cube[4][2][0] = temp
-        moveDimension(cube,0)
-        
-    elif dimension == 'B': 
-        temp = cube[2][0]
-        cube[2][0] = [cube[4][0][2], cube[4][1][2], cube[4][2][2]]
-        cube[4][2][2], cube[4][1][2], cube[4][0][2] = cube[1][2]
-        cube[1][2] = [cube[3][0][0], cube[3][1][0], cube[3][2][0]]
-        cube[3][2][0], cube[3][1][0], cube[3][0][0] = temp
-        moveDimension(cube,5)    
-        
-    elif dimension == 'L': 
-        temp = [cube[0][0][0], cube[0][1][0], cube[0][2][0]]
-        cube[0][0][0], cube[0][1][0], cube[0][2][0] = cube[2][0][0], cube[2][1][0], cube[2][2][0]
-        cube[2][0][0], cube[2][1][0], cube[2][2][0] = cube[5][2][2], cube[5][1][2], cube[5][0][2]
-        cube[5][0][2], cube[5][1][2], cube[5][2][2] = cube[1][2][0], cube[1][1][0], cube[1][0][0]
-        cube[1][0][0], cube[1][1][0], cube[1][2][0] = temp
-        moveDimension(cube,3)
-        
-    elif dimension == 'R': 
-        temp = [cube[0][0][2], cube[0][1][2], cube[0][2][2]]
-        cube[0][0][2], cube[0][1][2], cube[0][2][2] = cube[1][0][2], cube[1][1][2], cube[1][2][2]
-        cube[1][0][2], cube[1][1][2], cube[1][2][2] = cube[5][2][0], cube[5][1][0], cube[5][0][0]
-        cube[5][0][0], cube[5][1][0], cube[5][2][0] = cube[2][2][2], cube[2][1][2], cube[2][0][2]
-        cube[2][0][2], cube[2][1][2], cube[2][2][2] = temp
-        moveDimension(cube,4)
+    # handles changes with different dimension after a turn
+    # turns selected dimension into clockwise direction
+    def move(self, state, dimension):
+        if dimension == 'U':
+            temp = state[0][0]
+            state[0][0] = state[4][0]
+            state[4][0] = state[5][0]
+            state[5][0] = state[3][0]
+            state[3][0] = temp
+            self.moveDimension(state,2)
+            
+        elif dimension == 'D': 
+            temp = state[0][2]
+            state[0][2] = state[3][2]
+            state[3][2] = state[5][2]
+            state[5][2] = state[4][2]
+            state[4][2] = temp
+            self.moveDimension(state,1)
+            
+        elif dimension == 'F': 
+            temp = state[2][2]
+            state[2][2] = [state[3][2][2], state[3][1][2], state[3][0][2]]
+            state[3][0][2], state[3][1][2], state[3][2][2] = state[1][0]
+            state[1][0] = [state[4][2][0], state[4][1][0], state[4][0][0]]
+            state[4][0][0], state[4][1][0], state[4][2][0] = temp
+            self.moveDimension(state,0)
+            
+        elif dimension == 'B': 
+            temp = state[2][0]
+            state[2][0] = [state[4][0][2], state[4][1][2], state[4][2][2]]
+            state[4][2][2], state[4][1][2], state[4][0][2] = state[1][2]
+            state[1][2] = [state[3][0][0], state[3][1][0], state[3][2][0]]
+            state[3][2][0], state[3][1][0], state[3][0][0] = temp
+            self.moveDimension(state,5)    
+            
+        elif dimension == 'L': 
+            temp = [state[0][0][0], state[0][1][0], state[0][2][0]]
+            state[0][0][0], state[0][1][0], state[0][2][0] = state[2][0][0], state[2][1][0], state[2][2][0]
+            state[2][0][0], state[2][1][0], state[2][2][0] = state[5][2][2], state[5][1][2], state[5][0][2]
+            state[5][0][2], state[5][1][2], state[5][2][2] = state[1][2][0], state[1][1][0], state[1][0][0]
+            state[1][0][0], state[1][1][0], state[1][2][0] = temp
+            self.moveDimension(state,3)
+            
+        elif dimension == 'R': 
+            temp = [state[0][0][2], state[0][1][2], state[0][2][2]]
+            state[0][0][2], state[0][1][2], state[0][2][2] = state[1][0][2], state[1][1][2], state[1][2][2]
+            state[1][0][2], state[1][1][2], state[1][2][2] = state[5][2][0], state[5][1][0], state[5][0][0]
+            state[5][0][0], state[5][1][0], state[5][2][0] = state[2][2][2], state[2][1][2], state[2][0][2]
+            state[2][0][2], state[2][1][2], state[2][2][2] = temp
+            self.moveDimension(state,4)
 
-# handles command tuple and turns cube
-def turn(cube, command):
-    dimension, direction = command
-    count = 1 if direction == 'C' else 3
-    for _ in range(count): move(cube, dimension)
+    # handles command tuple and turns cube
+    # returns new state after command
+    def turn(self, command):
+        dimension, direction = command
+        newState = self.state
+        count = 1 if direction == 'C' else 3
+        for _ in range(count): self.move(newState, dimension)
+        return newState
 
-# initializes Cube into random starting state
-# Turns cube into random direction num times
-def initRandCube(cube, num):
-    for _ in range(num):
-        command = random.choice(COMMAND)
-        turn(cube, command)
-
-# Create cube
-cube = [[] for _ in range(6)]
-for _ in range(3):
-    cube[0].append(['R','R','R']); cube[1].append(['Y','Y','Y']); cube[2].append(['W','W','W'])
-    cube[3].append(['G','G','G']); cube[4].append(['B','B','B']); cube[5].append(['O','O','O'])
-# Get input to initialize random cube
-num = int(input("Select number of turns to initialize cube: "))
-# initialize random cube
-initRandCube(cube, int(num))
-print("Cube initial State: ")
-printCube(cube)
+    # initializes Cube into random starting state
+    # Turns cube into random direction num times
+    def initRandState(self, num):
+        for _ in range(num):
+            command = random.choice(COMMAND)
+            self.state = self.turn(command)

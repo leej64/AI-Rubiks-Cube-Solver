@@ -15,7 +15,7 @@ from tqdm import tqdm
                [1]
                YYY
                YYY
-               YYY  
+               YYY
 """
 # Red, Yellow, White, Green, Blue, Orange
 # [0]: front, [1]: down, [2]: up, [3]: left, [4]: right, [5]: back

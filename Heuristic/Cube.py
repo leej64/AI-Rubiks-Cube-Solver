@@ -1,5 +1,3 @@
-# Created by Junwon Lee 2023-12-01
-
 import random
 
 """

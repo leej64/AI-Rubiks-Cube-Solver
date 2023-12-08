@@ -1,6 +1,6 @@
 from typing import List, Tuple
 import numpy as np
-from environment.environment_abstract import Environment, State
+from environments.environment_abstract import Environment, State
 from utils import misc_utils
 
 

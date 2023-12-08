@@ -1,6 +1,6 @@
 import re
 import math
-from environment.environment_abstract import Environment
+from environments.environment_abstract import Environment
 
 
 def get_environment(env_name: str) -> Environment:

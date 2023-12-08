@@ -18,14 +18,14 @@ def print_results(results):
     lens = np.array([len(x) for x in results["solutions"]])
     num_nodes_generated = np.array(results["num_nodes_generated"])
 
-    print("-Times-")
-    print_stats(times)
+    #print("-Times-")
+    #print_stats(times)
     print("-Lengths-")
     print_stats(lens)
-    print("-Nodes Generated-")
-    print_stats(num_nodes_generated)
-    print("-Nodes/Sec-")
-    print_stats(np.array(num_nodes_generated) / np.array(times))
+    #print("-Nodes Generated-")
+    #print_stats(num_nodes_generated)
+    #print("-Nodes/Sec-")
+    #print_stats(np.array(num_nodes_generated) / np.array(times))
 
 
 def main():
@@ -44,10 +44,10 @@ def main():
 
     print("%i states" % (len(results1["states"])))
 
-    print("\n--SOLUTION 1---")
+    print("\n--Optimal Solution---")
     print_results(results1)
 
-    print("\n--SOLUTION 2---")
+    print("\n--Result---")
     print_results(results2)
 
     print("\n\n------Solution 2 - Solution 1 Lengths-----")

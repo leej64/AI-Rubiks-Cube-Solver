@@ -1,0 +1,393 @@
+device: cuda:0, devices: [0], on_gpu: True
+Updating cost-to-go with value iteration
+0.02% (Total time: 4.45)
+11.12% (Total time: 206.84)
+22.24% (Total time: 404.81)
+33.33% (Total time: 601.98)
+44.45% (Total time: 800.98)
+55.55% (Total time: 998.25)
+66.67% (Total time: 1195.80)
+77.76% (Total time: 1393.08)
+88.88% (Total time: 1592.04)
+100.00% (Total time: 1788.39)
+Cost-to-go (mean/min/max): 0.96/0.00/1.00
+Training model for update number 0 for 5000 iterations
+Itr: 0, lr: 1.00E-03, loss: 7.67E-01, targ_ctg: 0.96, nnet_ctg: 0.57, Time: 8.98
+Itr: 100, lr: 1.00E-03, loss: 3.61E-03, targ_ctg: 0.96, nnet_ctg: 0.96, Time: 12.49
+Itr: 200, lr: 1.00E-03, loss: 1.89E-03, targ_ctg: 0.96, nnet_ctg: 0.97, Time: 12.24
+Itr: 300, lr: 1.00E-03, loss: 3.10E-03, targ_ctg: 0.96, nnet_ctg: 0.96, Time: 12.47
+Itr: 400, lr: 1.00E-03, loss: 1.24E-03, targ_ctg: 0.96, nnet_ctg: 0.96, Time: 12.34
+Itr: 500, lr: 1.00E-03, loss: 8.54E-04, targ_ctg: 0.97, nnet_ctg: 0.96, Time: 12.45
+Itr: 600, lr: 1.00E-03, loss: 9.36E-04, targ_ctg: 0.97, nnet_ctg: 0.95, Time: 12.42
+Itr: 700, lr: 1.00E-03, loss: 6.89E-04, targ_ctg: 0.97, nnet_ctg: 0.97, Time: 12.45
+Itr: 800, lr: 9.99E-04, loss: 6.67E-04, targ_ctg: 0.96, nnet_ctg: 0.97, Time: 12.47
+Itr: 900, lr: 9.99E-04, loss: 4.51E-04, targ_ctg: 0.96, nnet_ctg: 0.96, Time: 12.51
+Itr: 1000, lr: 9.99E-04, loss: 4.37E-04, targ_ctg: 0.97, nnet_ctg: 0.96, Time: 12.53
+Itr: 1100, lr: 9.99E-04, loss: 1.43E-03, targ_ctg: 0.96, nnet_ctg: 0.94, Time: 12.54
+Itr: 1200, lr: 9.99E-04, loss: 3.58E-04, targ_ctg: 0.96, nnet_ctg: 0.96, Time: 12.55
+Itr: 1300, lr: 9.99E-04, loss: 2.06E-03, targ_ctg: 0.97, nnet_ctg: 0.97, Time: 12.57
+Itr: 1400, lr: 9.99E-04, loss: 6.02E-04, targ_ctg: 0.96, nnet_ctg: 0.95, Time: 12.60
+Itr: 1500, lr: 9.99E-04, loss: 1.62E-03, targ_ctg: 0.96, nnet_ctg: 0.99, Time: 12.65
+Itr: 1600, lr: 9.99E-04, loss: 8.29E-04, targ_ctg: 0.97, nnet_ctg: 0.95, Time: 12.67
+Itr: 1700, lr: 9.99E-04, loss: 4.02E-04, targ_ctg: 0.96, nnet_ctg: 0.96, Time: 12.75
+Itr: 1800, lr: 9.99E-04, loss: 5.35E-04, targ_ctg: 0.96, nnet_ctg: 0.98, Time: 12.78
+Itr: 1900, lr: 9.99E-04, loss: 2.08E-03, targ_ctg: 0.96, nnet_ctg: 1.00, Time: 12.90
+Itr: 2000, lr: 9.99E-04, loss: 2.83E-03, targ_ctg: 0.97, nnet_ctg: 0.93, Time: 12.86
+Itr: 2100, lr: 9.99E-04, loss: 4.44E-04, targ_ctg: 0.96, nnet_ctg: 0.95, Time: 12.89
+Itr: 2200, lr: 9.98E-04, loss: 4.37E-04, targ_ctg: 0.96, nnet_ctg: 0.98, Time: 12.91
+Itr: 2300, lr: 9.98E-04, loss: 1.87E-03, targ_ctg: 0.97, nnet_ctg: 0.94, Time: 12.98
+Itr: 2400, lr: 9.98E-04, loss: 6.24E-04, targ_ctg: 0.96, nnet_ctg: 0.94, Time: 13.04
+Itr: 2500, lr: 9.98E-04, loss: 1.05E-03, targ_ctg: 0.96, nnet_ctg: 0.94, Time: 12.97
+Itr: 2600, lr: 9.98E-04, loss: 2.12E-03, targ_ctg: 0.97, nnet_ctg: 0.97, Time: 13.03
+Itr: 2700, lr: 9.98E-04, loss: 9.31E-04, targ_ctg: 0.97, nnet_ctg: 0.95, Time: 12.99
+Itr: 2800, lr: 9.98E-04, loss: 3.00E-04, targ_ctg: 0.97, nnet_ctg: 0.96, Time: 13.05
+Itr: 2900, lr: 9.98E-04, loss: 4.24E-03, targ_ctg: 0.96, nnet_ctg: 0.99, Time: 12.99
+Itr: 3000, lr: 9.98E-04, loss: 1.28E-04, targ_ctg: 0.96, nnet_ctg: 0.97, Time: 12.72
+Itr: 3100, lr: 9.98E-04, loss: 5.05E-03, targ_ctg: 0.96, nnet_ctg: 0.91, Time: 12.58
+Itr: 3200, lr: 9.98E-04, loss: 1.79E-04, targ_ctg: 0.96, nnet_ctg: 0.97, Time: 12.54
+Itr: 3300, lr: 9.98E-04, loss: 8.63E-04, targ_ctg: 0.96, nnet_ctg: 0.94, Time: 12.53
+Itr: 3400, lr: 9.98E-04, loss: 9.38E-05, targ_ctg: 0.97, nnet_ctg: 0.96, Time: 12.51
+Itr: 3500, lr: 9.98E-04, loss: 3.93E-03, targ_ctg: 0.97, nnet_ctg: 1.01, Time: 12.49
+Itr: 3600, lr: 9.97E-04, loss: 1.18E-04, targ_ctg: 0.97, nnet_ctg: 0.97, Time: 12.48
+Itr: 3700, lr: 9.97E-04, loss: 7.10E-04, targ_ctg: 0.96, nnet_ctg: 0.95, Time: 12.47
+Itr: 3800, lr: 9.97E-04, loss: 9.09E-05, targ_ctg: 0.96, nnet_ctg: 0.96, Time: 12.47
+Itr: 3900, lr: 9.97E-04, loss: 5.38E-05, targ_ctg: 0.96, nnet_ctg: 0.96, Time: 12.45
+Itr: 4000, lr: 9.97E-04, loss: 4.12E-03, targ_ctg: 0.97, nnet_ctg: 0.91, Time: 12.46
+Itr: 4100, lr: 9.97E-04, loss: 2.68E-04, targ_ctg: 0.96, nnet_ctg: 0.95, Time: 12.44
+Itr: 4200, lr: 9.97E-04, loss: 1.83E-04, targ_ctg: 0.96, nnet_ctg: 0.95, Time: 12.50
+Itr: 4300, lr: 9.97E-04, loss: 3.91E-05, targ_ctg: 0.96, nnet_ctg: 0.96, Time: 12.44
+Itr: 4400, lr: 9.97E-04, loss: 3.80E-05, targ_ctg: 0.96, nnet_ctg: 0.96, Time: 12.43
+Itr: 4500, lr: 9.97E-04, loss: 2.57E-04, targ_ctg: 0.96, nnet_ctg: 0.97, Time: 12.44
+Itr: 4600, lr: 9.97E-04, loss: 1.18E-03, targ_ctg: 0.96, nnet_ctg: 0.94, Time: 12.44
+Itr: 4700, lr: 9.97E-04, loss: 1.61E-03, targ_ctg: 0.96, nnet_ctg: 0.93, Time: 12.43
+Itr: 4800, lr: 9.97E-04, loss: 1.31E-02, targ_ctg: 0.96, nnet_ctg: 1.04, Time: 12.44
+Itr: 4900, lr: 9.97E-04, loss: 1.78E-04, targ_ctg: 0.96, nnet_ctg: 0.97, Time: 12.42
+Last loss was 0.000518
+Updating target network
+Updating cost-to-go with value iteration
+0.02% (Total time: 10.14)
+11.12% (Total time: 367.89)
+22.24% (Total time: 723.27)
+33.33% (Total time: 1076.51)
+44.45% (Total time: 1429.40)
+55.55% (Total time: 1781.34)
+66.67% (Total time: 2134.35)
+77.76% (Total time: 2486.28)
+88.88% (Total time: 2839.07)
+100.00% (Total time: 3184.54)
+Cost-to-go (mean/min/max): 1.90/0.00/2.02
+Training model for update number 1 for 5000 iterations
+Itr: 5000, lr: 9.97E-04, loss: 9.07E-01, targ_ctg: 1.90, nnet_ctg: 0.98, Time: 9.08
+Itr: 5100, lr: 9.96E-04, loss: 2.11E-03, targ_ctg: 1.89, nnet_ctg: 1.92, Time: 12.50
+Itr: 5200, lr: 9.96E-04, loss: 1.86E-03, targ_ctg: 1.90, nnet_ctg: 1.88, Time: 12.35
+Itr: 5300, lr: 9.96E-04, loss: 2.79E-03, targ_ctg: 1.90, nnet_ctg: 1.93, Time: 12.36
+Itr: 5400, lr: 9.96E-04, loss: 2.38E-03, targ_ctg: 1.89, nnet_ctg: 1.85, Time: 12.37
+Itr: 5500, lr: 9.96E-04, loss: 7.14E-04, targ_ctg: 1.90, nnet_ctg: 1.88, Time: 12.47
+Itr: 5600, lr: 9.96E-04, loss: 3.44E-03, targ_ctg: 1.89, nnet_ctg: 1.95, Time: 12.38
+Itr: 5700, lr: 9.96E-04, loss: 3.69E-03, targ_ctg: 1.90, nnet_ctg: 1.94, Time: 12.38
+Itr: 5800, lr: 9.96E-04, loss: 7.23E-04, targ_ctg: 1.90, nnet_ctg: 1.87, Time: 12.38
+Itr: 5900, lr: 9.96E-04, loss: 4.18E-03, targ_ctg: 1.89, nnet_ctg: 1.93, Time: 12.38
+Itr: 6000, lr: 9.96E-04, loss: 4.89E-03, targ_ctg: 1.89, nnet_ctg: 1.96, Time: 12.39
+Itr: 6100, lr: 9.96E-04, loss: 3.67E-04, targ_ctg: 1.90, nnet_ctg: 1.90, Time: 12.39
+Itr: 6200, lr: 9.96E-04, loss: 6.72E-04, targ_ctg: 1.89, nnet_ctg: 1.90, Time: 12.41
+Itr: 6300, lr: 9.96E-04, loss: 4.21E-04, targ_ctg: 1.90, nnet_ctg: 1.91, Time: 12.46
+Itr: 6400, lr: 9.96E-04, loss: 2.05E-04, targ_ctg: 1.89, nnet_ctg: 1.89, Time: 12.39
+Itr: 6500, lr: 9.95E-04, loss: 8.86E-05, targ_ctg: 1.90, nnet_ctg: 1.89, Time: 12.39
+Itr: 6600, lr: 9.95E-04, loss: 2.06E-03, targ_ctg: 1.89, nnet_ctg: 1.87, Time: 12.39
+Itr: 6700, lr: 9.95E-04, loss: 3.89E-04, targ_ctg: 1.89, nnet_ctg: 1.91, Time: 12.38
+Itr: 6800, lr: 9.95E-04, loss: 3.58E-04, targ_ctg: 1.89, nnet_ctg: 1.88, Time: 12.38
+Itr: 6900, lr: 9.95E-04, loss: 3.52E-05, targ_ctg: 1.89, nnet_ctg: 1.90, Time: 12.39
+Itr: 7000, lr: 9.95E-04, loss: 5.88E-04, targ_ctg: 1.89, nnet_ctg: 1.91, Time: 12.39
+Itr: 7100, lr: 9.95E-04, loss: 2.86E-04, targ_ctg: 1.90, nnet_ctg: 1.91, Time: 12.39
+Itr: 7200, lr: 9.95E-04, loss: 1.00E-04, targ_ctg: 1.90, nnet_ctg: 1.90, Time: 12.39
+Itr: 7300, lr: 9.95E-04, loss: 3.82E-03, targ_ctg: 1.89, nnet_ctg: 1.87, Time: 12.39
+Itr: 7400, lr: 9.95E-04, loss: 2.05E-04, targ_ctg: 1.90, nnet_ctg: 1.91, Time: 12.40
+Itr: 7500, lr: 9.95E-04, loss: 4.82E-03, targ_ctg: 1.90, nnet_ctg: 1.96, Time: 12.38
+Itr: 7600, lr: 9.95E-04, loss: 3.12E-03, targ_ctg: 1.89, nnet_ctg: 1.93, Time: 12.38
+Itr: 7700, lr: 9.95E-04, loss: 3.35E-03, targ_ctg: 1.90, nnet_ctg: 1.86, Time: 12.38
+Itr: 7800, lr: 9.95E-04, loss: 2.20E-04, targ_ctg: 1.90, nnet_ctg: 1.91, Time: 12.38
+Itr: 7900, lr: 9.94E-04, loss: 1.34E-03, targ_ctg: 1.90, nnet_ctg: 1.89, Time: 12.38
+Itr: 8000, lr: 9.94E-04, loss: 3.33E-04, targ_ctg: 1.90, nnet_ctg: 1.89, Time: 12.40
+Itr: 8100, lr: 9.94E-04, loss: 1.50E-03, targ_ctg: 1.90, nnet_ctg: 1.86, Time: 12.38
+Itr: 8200, lr: 9.94E-04, loss: 1.94E-04, targ_ctg: 1.89, nnet_ctg: 1.88, Time: 12.39
+Itr: 8300, lr: 9.94E-04, loss: 8.95E-04, targ_ctg: 1.90, nnet_ctg: 1.92, Time: 12.39
+Itr: 8400, lr: 9.94E-04, loss: 2.82E-04, targ_ctg: 1.90, nnet_ctg: 1.91, Time: 12.39
+Itr: 8500, lr: 9.94E-04, loss: 4.07E-04, targ_ctg: 1.90, nnet_ctg: 1.89, Time: 12.39
+Itr: 8600, lr: 9.94E-04, loss: 7.66E-05, targ_ctg: 1.90, nnet_ctg: 1.89, Time: 12.39
+Itr: 8700, lr: 9.94E-04, loss: 4.32E-04, targ_ctg: 1.89, nnet_ctg: 1.91, Time: 12.39
+Itr: 8800, lr: 9.94E-04, loss: 1.73E-03, targ_ctg: 1.90, nnet_ctg: 1.87, Time: 12.40
+Itr: 8900, lr: 9.94E-04, loss: 1.05E-03, targ_ctg: 1.90, nnet_ctg: 1.90, Time: 12.38
+Itr: 9000, lr: 9.94E-04, loss: 6.13E-03, targ_ctg: 1.89, nnet_ctg: 1.94, Time: 12.39
+Itr: 9100, lr: 9.94E-04, loss: 2.54E-03, targ_ctg: 1.89, nnet_ctg: 1.86, Time: 12.37
+Itr: 9200, lr: 9.94E-04, loss: 2.38E-04, targ_ctg: 1.90, nnet_ctg: 1.91, Time: 12.38
+Itr: 9300, lr: 9.94E-04, loss: 4.89E-05, targ_ctg: 1.89, nnet_ctg: 1.89, Time: 12.39
+Itr: 9400, lr: 9.93E-04, loss: 7.09E-04, targ_ctg: 1.89, nnet_ctg: 1.89, Time: 12.38
+Itr: 9500, lr: 9.93E-04, loss: 4.22E-04, targ_ctg: 1.90, nnet_ctg: 1.88, Time: 12.39
+Itr: 9600, lr: 9.93E-04, loss: 4.71E-05, targ_ctg: 1.90, nnet_ctg: 1.91, Time: 12.38
+Itr: 9700, lr: 9.93E-04, loss: 5.51E-05, targ_ctg: 1.90, nnet_ctg: 1.89, Time: 12.44
+Itr: 9800, lr: 9.93E-04, loss: 9.56E-05, targ_ctg: 1.89, nnet_ctg: 1.88, Time: 12.39
+Itr: 9900, lr: 9.93E-04, loss: 2.81E-04, targ_ctg: 1.90, nnet_ctg: 1.89, Time: 12.38
+Last loss was 0.000380
+Updating target network
+Updating cost-to-go with value iteration
+0.02% (Total time: 13.88)
+11.12% (Total time: 367.16)
+22.24% (Total time: 720.65)
+33.33% (Total time: 1072.98)
+44.45% (Total time: 1426.12)
+55.55% (Total time: 1778.45)
+66.67% (Total time: 2131.74)
+77.76% (Total time: 2484.21)
+88.88% (Total time: 2837.39)
+100.00% (Total time: 3183.46)
+Cost-to-go (mean/min/max): 2.76/0.00/3.00
+Training model for update number 2 for 5000 iterations
+Itr: 10000, lr: 9.93E-04, loss: 8.75E-01, targ_ctg: 2.76, nnet_ctg: 1.87, Time: 9.09
+Itr: 10100, lr: 9.93E-04, loss: 2.68E-03, targ_ctg: 2.77, nnet_ctg: 2.79, Time: 12.60
+Itr: 10200, lr: 9.93E-04, loss: 1.51E-03, targ_ctg: 2.77, nnet_ctg: 2.76, Time: 12.31
+Itr: 10300, lr: 9.93E-04, loss: 2.40E-03, targ_ctg: 2.77, nnet_ctg: 2.81, Time: 12.34
+Itr: 10400, lr: 9.93E-04, loss: 2.99E-04, targ_ctg: 2.75, nnet_ctg: 2.75, Time: 12.34
+Itr: 10500, lr: 9.93E-04, loss: 3.69E-03, targ_ctg: 2.77, nnet_ctg: 2.71, Time: 12.36
+Itr: 10600, lr: 9.93E-04, loss: 1.13E-03, targ_ctg: 2.76, nnet_ctg: 2.74, Time: 12.37
+Itr: 10700, lr: 9.93E-04, loss: 1.14E-04, targ_ctg: 2.78, nnet_ctg: 2.78, Time: 12.35
+Itr: 10800, lr: 9.92E-04, loss: 2.25E-04, targ_ctg: 2.76, nnet_ctg: 2.76, Time: 12.36
+Itr: 10900, lr: 9.92E-04, loss: 1.39E-03, targ_ctg: 2.76, nnet_ctg: 2.78, Time: 12.37
+Itr: 11000, lr: 9.92E-04, loss: 8.79E-04, targ_ctg: 2.77, nnet_ctg: 2.77, Time: 12.38
+Itr: 11100, lr: 9.92E-04, loss: 3.81E-03, targ_ctg: 2.76, nnet_ctg: 2.82, Time: 12.37
+Itr: 11200, lr: 9.92E-04, loss: 4.85E-03, targ_ctg: 2.76, nnet_ctg: 2.80, Time: 12.37
+Itr: 11300, lr: 9.92E-04, loss: 4.93E-04, targ_ctg: 2.77, nnet_ctg: 2.75, Time: 12.38
+Itr: 11400, lr: 9.92E-04, loss: 2.31E-03, targ_ctg: 2.77, nnet_ctg: 2.78, Time: 12.38
+Itr: 11500, lr: 9.92E-04, loss: 8.12E-04, targ_ctg: 2.75, nnet_ctg: 2.76, Time: 12.38
+Itr: 11600, lr: 9.92E-04, loss: 3.66E-04, targ_ctg: 2.76, nnet_ctg: 2.77, Time: 12.38
+Itr: 11700, lr: 9.92E-04, loss: 4.59E-03, targ_ctg: 2.76, nnet_ctg: 2.81, Time: 12.37
+Itr: 11800, lr: 9.92E-04, loss: 8.26E-03, targ_ctg: 2.76, nnet_ctg: 2.84, Time: 12.38
+Itr: 11900, lr: 9.92E-04, loss: 1.89E-03, targ_ctg: 2.76, nnet_ctg: 2.78, Time: 12.37
+Itr: 12000, lr: 9.92E-04, loss: 1.42E-03, targ_ctg: 2.76, nnet_ctg: 2.73, Time: 12.37
+Itr: 12100, lr: 9.92E-04, loss: 2.61E-03, targ_ctg: 2.76, nnet_ctg: 2.76, Time: 12.38
+Itr: 12200, lr: 9.91E-04, loss: 1.95E-03, targ_ctg: 2.77, nnet_ctg: 2.77, Time: 12.37
+Itr: 12300, lr: 9.91E-04, loss: 3.11E-04, targ_ctg: 2.76, nnet_ctg: 2.76, Time: 12.37
+Itr: 12400, lr: 9.91E-04, loss: 1.68E-03, targ_ctg: 2.77, nnet_ctg: 2.76, Time: 12.38
+Itr: 12500, lr: 9.91E-04, loss: 8.59E-05, targ_ctg: 2.76, nnet_ctg: 2.76, Time: 12.36
+Itr: 12600, lr: 9.91E-04, loss: 1.48E-03, targ_ctg: 2.77, nnet_ctg: 2.74, Time: 12.39
+Itr: 12700, lr: 9.91E-04, loss: 4.60E-04, targ_ctg: 2.76, nnet_ctg: 2.76, Time: 12.36
+Itr: 12800, lr: 9.91E-04, loss: 3.27E-04, targ_ctg: 2.75, nnet_ctg: 2.77, Time: 12.37
+Itr: 12900, lr: 9.91E-04, loss: 4.30E-04, targ_ctg: 2.76, nnet_ctg: 2.76, Time: 12.36
+Itr: 13000, lr: 9.91E-04, loss: 4.16E-04, targ_ctg: 2.75, nnet_ctg: 2.75, Time: 12.37
+Itr: 13100, lr: 9.91E-04, loss: 2.29E-03, targ_ctg: 2.76, nnet_ctg: 2.76, Time: 12.42
+Itr: 13200, lr: 9.91E-04, loss: 1.68E-03, targ_ctg: 2.76, nnet_ctg: 2.80, Time: 12.36
+Itr: 13300, lr: 9.91E-04, loss: 1.14E-03, targ_ctg: 2.77, nnet_ctg: 2.77, Time: 12.39
+Itr: 13400, lr: 9.91E-04, loss: 2.31E-04, targ_ctg: 2.77, nnet_ctg: 2.77, Time: 12.38
+Itr: 13500, lr: 9.91E-04, loss: 9.95E-04, targ_ctg: 2.76, nnet_ctg: 2.74, Time: 12.36
+Itr: 13600, lr: 9.91E-04, loss: 1.25E-04, targ_ctg: 2.77, nnet_ctg: 2.77, Time: 12.36
+Itr: 13700, lr: 9.90E-04, loss: 9.13E-05, targ_ctg: 2.76, nnet_ctg: 2.75, Time: 12.36
+Itr: 13800, lr: 9.90E-04, loss: 7.51E-04, targ_ctg: 2.75, nnet_ctg: 2.74, Time: 12.36
+Itr: 13900, lr: 9.90E-04, loss: 9.04E-04, targ_ctg: 2.77, nnet_ctg: 2.78, Time: 12.37
+Itr: 14000, lr: 9.90E-04, loss: 2.80E-04, targ_ctg: 2.77, nnet_ctg: 2.77, Time: 12.36
+Itr: 14100, lr: 9.90E-04, loss: 9.50E-04, targ_ctg: 2.75, nnet_ctg: 2.73, Time: 12.37
+Itr: 14200, lr: 9.90E-04, loss: 7.50E-04, targ_ctg: 2.76, nnet_ctg: 2.77, Time: 12.36
+Itr: 14300, lr: 9.90E-04, loss: 1.52E-03, targ_ctg: 2.76, nnet_ctg: 2.78, Time: 12.37
+Itr: 14400, lr: 9.90E-04, loss: 2.41E-03, targ_ctg: 2.77, nnet_ctg: 2.80, Time: 12.36
+Itr: 14500, lr: 9.90E-04, loss: 1.89E-04, targ_ctg: 2.76, nnet_ctg: 2.77, Time: 12.36
+Itr: 14600, lr: 9.90E-04, loss: 1.40E-03, targ_ctg: 2.75, nnet_ctg: 2.74, Time: 12.36
+Itr: 14700, lr: 9.90E-04, loss: 5.58E-03, targ_ctg: 2.77, nnet_ctg: 2.75, Time: 12.36
+Itr: 14800, lr: 9.90E-04, loss: 3.00E-04, targ_ctg: 2.76, nnet_ctg: 2.75, Time: 12.38
+Itr: 14900, lr: 9.90E-04, loss: 1.35E-03, targ_ctg: 2.76, nnet_ctg: 2.79, Time: 12.37
+Last loss was 0.002738
+Updating target network
+Updating cost-to-go with value iteration
+0.02% (Total time: 13.15)
+11.12% (Total time: 365.42)
+22.24% (Total time: 717.77)
+33.33% (Total time: 1069.45)
+44.45% (Total time: 1421.79)
+55.55% (Total time: 1773.72)
+66.67% (Total time: 2126.24)
+77.76% (Total time: 2478.13)
+88.88% (Total time: 2830.73)
+100.00% (Total time: 3176.09)
+Cost-to-go (mean/min/max): 3.64/0.00/4.04
+Training model for update number 3 for 5000 iterations
+Itr: 15000, lr: 9.90E-04, loss: 8.45E-01, targ_ctg: 3.65, nnet_ctg: 2.81, Time: 8.95
+Itr: 15100, lr: 9.89E-04, loss: 1.29E-03, targ_ctg: 3.64, nnet_ctg: 3.63, Time: 12.63
+Itr: 15200, lr: 9.89E-04, loss: 1.21E-03, targ_ctg: 3.66, nnet_ctg: 3.64, Time: 12.31
+Itr: 15300, lr: 9.89E-04, loss: 1.12E-03, targ_ctg: 3.63, nnet_ctg: 3.64, Time: 12.33
+Itr: 15400, lr: 9.89E-04, loss: 7.27E-04, targ_ctg: 3.65, nnet_ctg: 3.63, Time: 12.35
+Itr: 15500, lr: 9.89E-04, loss: 1.38E-03, targ_ctg: 3.65, nnet_ctg: 3.64, Time: 12.35
+Itr: 15600, lr: 9.89E-04, loss: 8.10E-04, targ_ctg: 3.63, nnet_ctg: 3.65, Time: 12.36
+Itr: 15700, lr: 9.89E-04, loss: 1.56E-03, targ_ctg: 3.64, nnet_ctg: 3.68, Time: 12.35
+Itr: 15800, lr: 9.89E-04, loss: 3.21E-03, targ_ctg: 3.64, nnet_ctg: 3.68, Time: 12.35
+Itr: 15900, lr: 9.89E-04, loss: 1.14E-03, targ_ctg: 3.63, nnet_ctg: 3.60, Time: 12.35
+Itr: 16000, lr: 9.89E-04, loss: 1.01E-03, targ_ctg: 3.65, nnet_ctg: 3.67, Time: 12.36
+Itr: 16100, lr: 9.89E-04, loss: 1.44E-03, targ_ctg: 3.65, nnet_ctg: 3.68, Time: 12.37
+Itr: 16200, lr: 9.89E-04, loss: 1.22E-03, targ_ctg: 3.64, nnet_ctg: 3.66, Time: 12.36
+Itr: 16300, lr: 9.89E-04, loss: 9.29E-04, targ_ctg: 3.64, nnet_ctg: 3.66, Time: 12.36
+Itr: 16400, lr: 9.89E-04, loss: 8.68E-04, targ_ctg: 3.64, nnet_ctg: 3.67, Time: 12.36
+Itr: 16500, lr: 9.89E-04, loss: 8.22E-04, targ_ctg: 3.66, nnet_ctg: 3.66, Time: 12.39
+Itr: 16600, lr: 9.88E-04, loss: 1.56E-04, targ_ctg: 3.64, nnet_ctg: 3.64, Time: 12.37
+Itr: 16700, lr: 9.88E-04, loss: 6.35E-04, targ_ctg: 3.64, nnet_ctg: 3.64, Time: 12.36
+Itr: 16800, lr: 9.88E-04, loss: 1.43E-03, targ_ctg: 3.63, nnet_ctg: 3.63, Time: 12.37
+Itr: 16900, lr: 9.88E-04, loss: 8.49E-04, targ_ctg: 3.63, nnet_ctg: 3.61, Time: 12.37
+Itr: 17000, lr: 9.88E-04, loss: 4.80E-04, targ_ctg: 3.63, nnet_ctg: 3.64, Time: 12.37
+Itr: 17100, lr: 9.88E-04, loss: 1.22E-03, targ_ctg: 3.64, nnet_ctg: 3.64, Time: 12.37
+Itr: 17200, lr: 9.88E-04, loss: 1.26E-03, targ_ctg: 3.63, nnet_ctg: 3.59, Time: 12.37
+Itr: 17300, lr: 9.88E-04, loss: 1.45E-03, targ_ctg: 3.63, nnet_ctg: 3.61, Time: 12.37
+Itr: 17400, lr: 9.88E-04, loss: 1.92E-04, targ_ctg: 3.66, nnet_ctg: 3.67, Time: 12.37
+Itr: 17500, lr: 9.88E-04, loss: 2.68E-04, targ_ctg: 3.63, nnet_ctg: 3.62, Time: 12.37
+Itr: 17600, lr: 9.88E-04, loss: 3.25E-04, targ_ctg: 3.63, nnet_ctg: 3.65, Time: 12.36
+Itr: 17700, lr: 9.88E-04, loss: 1.59E-04, targ_ctg: 3.63, nnet_ctg: 3.64, Time: 12.35
+Itr: 17800, lr: 9.88E-04, loss: 1.95E-04, targ_ctg: 3.63, nnet_ctg: 3.64, Time: 12.35
+Itr: 17900, lr: 9.88E-04, loss: 4.49E-04, targ_ctg: 3.65, nnet_ctg: 3.66, Time: 12.35
+Itr: 18000, lr: 9.87E-04, loss: 1.28E-03, targ_ctg: 3.64, nnet_ctg: 3.63, Time: 12.37
+Itr: 18100, lr: 9.87E-04, loss: 1.80E-03, targ_ctg: 3.63, nnet_ctg: 3.67, Time: 12.36
+Itr: 18200, lr: 9.87E-04, loss: 2.90E-03, targ_ctg: 3.65, nnet_ctg: 3.61, Time: 12.35
+Itr: 18300, lr: 9.87E-04, loss: 5.81E-04, targ_ctg: 3.61, nnet_ctg: 3.60, Time: 12.36
+Itr: 18400, lr: 9.87E-04, loss: 7.73E-04, targ_ctg: 3.66, nnet_ctg: 3.68, Time: 12.36
+Itr: 18500, lr: 9.87E-04, loss: 2.06E-03, targ_ctg: 3.65, nnet_ctg: 3.61, Time: 12.35
+Itr: 18600, lr: 9.87E-04, loss: 1.65E-04, targ_ctg: 3.64, nnet_ctg: 3.63, Time: 12.36
+Itr: 18700, lr: 9.87E-04, loss: 7.49E-04, targ_ctg: 3.63, nnet_ctg: 3.65, Time: 12.35
+Itr: 18800, lr: 9.87E-04, loss: 3.23E-04, targ_ctg: 3.63, nnet_ctg: 3.64, Time: 12.35
+Itr: 18900, lr: 9.87E-04, loss: 6.19E-04, targ_ctg: 3.62, nnet_ctg: 3.63, Time: 12.35
+Itr: 19000, lr: 9.87E-04, loss: 1.99E-03, targ_ctg: 3.65, nnet_ctg: 3.61, Time: 12.35
+Itr: 19100, lr: 9.87E-04, loss: 5.20E-04, targ_ctg: 3.65, nnet_ctg: 3.67, Time: 12.36
+Itr: 19200, lr: 9.87E-04, loss: 1.33E-04, targ_ctg: 3.64, nnet_ctg: 3.64, Time: 12.35
+Itr: 19300, lr: 9.87E-04, loss: 1.63E-02, targ_ctg: 3.64, nnet_ctg: 3.70, Time: 12.35
+Itr: 19400, lr: 9.87E-04, loss: 1.18E-03, targ_ctg: 3.63, nnet_ctg: 3.62, Time: 12.35
+Itr: 19500, lr: 9.86E-04, loss: 6.02E-04, targ_ctg: 3.64, nnet_ctg: 3.64, Time: 12.37
+Itr: 19600, lr: 9.86E-04, loss: 8.07E-04, targ_ctg: 3.63, nnet_ctg: 3.62, Time: 12.34
+Itr: 19700, lr: 9.86E-04, loss: 9.15E-04, targ_ctg: 3.63, nnet_ctg: 3.66, Time: 12.34
+Itr: 19800, lr: 9.86E-04, loss: 2.57E-03, targ_ctg: 3.63, nnet_ctg: 3.63, Time: 12.36
+Itr: 19900, lr: 9.86E-04, loss: 2.20E-03, targ_ctg: 3.64, nnet_ctg: 3.62, Time: 12.35
+Last loss was 0.001160
+Updating target network
+Updating cost-to-go with value iteration
+0.02% (Total time: 11.18)
+11.12% (Total time: 364.33)
+22.24% (Total time: 716.62)
+33.33% (Total time: 1068.53)
+44.45% (Total time: 1420.76)
+55.55% (Total time: 1772.64)
+66.67% (Total time: 2125.29)
+77.76% (Total time: 2477.40)
+88.88% (Total time: 2830.28)
+100.00% (Total time: 3175.86)
+Cost-to-go (mean/min/max): 4.45/0.00/5.05
+Training model for update number 4 for 5000 iterations
+Itr: 20000, lr: 9.86E-04, loss: 7.76E-01, targ_ctg: 4.45, nnet_ctg: 3.66, Time: 9.04
+Itr: 20100, lr: 9.86E-04, loss: 4.41E-03, targ_ctg: 4.43, nnet_ctg: 4.44, Time: 12.53
+Itr: 20200, lr: 9.86E-04, loss: 2.82E-03, targ_ctg: 4.45, nnet_ctg: 4.43, Time: 12.30
+Itr: 20300, lr: 9.86E-04, loss: 2.34E-03, targ_ctg: 4.44, nnet_ctg: 4.43, Time: 12.32
+Itr: 20400, lr: 9.86E-04, loss: 1.84E-03, targ_ctg: 4.45, nnet_ctg: 4.43, Time: 12.32
+Itr: 20500, lr: 9.86E-04, loss: 1.41E-03, targ_ctg: 4.43, nnet_ctg: 4.43, Time: 12.35
+Itr: 20600, lr: 9.86E-04, loss: 1.49E-03, targ_ctg: 4.44, nnet_ctg: 4.44, Time: 12.34
+Itr: 20700, lr: 9.86E-04, loss: 2.76E-03, targ_ctg: 4.46, nnet_ctg: 4.46, Time: 12.36
+Itr: 20800, lr: 9.86E-04, loss: 1.58E-03, targ_ctg: 4.44, nnet_ctg: 4.45, Time: 12.35
+Itr: 20900, lr: 9.85E-04, loss: 1.36E-03, targ_ctg: 4.42, nnet_ctg: 4.43, Time: 12.35
+Itr: 21000, lr: 9.85E-04, loss: 1.37E-03, targ_ctg: 4.42, nnet_ctg: 4.43, Time: 12.36
+Itr: 21100, lr: 9.85E-04, loss: 1.44E-03, targ_ctg: 4.44, nnet_ctg: 4.44, Time: 12.36
+Itr: 21200, lr: 9.85E-04, loss: 1.59E-03, targ_ctg: 4.44, nnet_ctg: 4.45, Time: 12.36
+Itr: 21300, lr: 9.85E-04, loss: 1.75E-03, targ_ctg: 4.44, nnet_ctg: 4.44, Time: 12.37
+Itr: 21400, lr: 9.85E-04, loss: 1.33E-03, targ_ctg: 4.45, nnet_ctg: 4.43, Time: 12.36
+Itr: 21500, lr: 9.85E-04, loss: 2.20E-03, targ_ctg: 4.42, nnet_ctg: 4.40, Time: 12.37
+Itr: 21600, lr: 9.85E-04, loss: 1.41E-03, targ_ctg: 4.46, nnet_ctg: 4.45, Time: 12.37
+Itr: 21700, lr: 9.85E-04, loss: 1.45E-03, targ_ctg: 4.45, nnet_ctg: 4.45, Time: 12.37
+Itr: 21800, lr: 9.85E-04, loss: 6.48E-04, targ_ctg: 4.44, nnet_ctg: 4.44, Time: 12.38
+Itr: 21900, lr: 9.85E-04, loss: 2.31E-03, targ_ctg: 4.45, nnet_ctg: 4.47, Time: 12.35
+Itr: 22000, lr: 9.85E-04, loss: 1.16E-03, targ_ctg: 4.44, nnet_ctg: 4.43, Time: 12.38
+Itr: 22100, lr: 9.85E-04, loss: 8.45E-04, targ_ctg: 4.44, nnet_ctg: 4.45, Time: 12.36
+Itr: 22200, lr: 9.85E-04, loss: 1.54E-03, targ_ctg: 4.41, nnet_ctg: 4.44, Time: 12.37
+Itr: 22300, lr: 9.85E-04, loss: 2.46E-03, targ_ctg: 4.44, nnet_ctg: 4.40, Time: 12.35
+Itr: 22400, lr: 9.84E-04, loss: 2.09E-03, targ_ctg: 4.44, nnet_ctg: 4.46, Time: 12.36
+Itr: 22500, lr: 9.84E-04, loss: 4.74E-04, targ_ctg: 4.47, nnet_ctg: 4.47, Time: 12.35
+Itr: 22600, lr: 9.84E-04, loss: 1.04E-03, targ_ctg: 4.43, nnet_ctg: 4.44, Time: 12.37
+Itr: 22700, lr: 9.84E-04, loss: 7.62E-04, targ_ctg: 4.43, nnet_ctg: 4.45, Time: 12.36
+Itr: 22800, lr: 9.84E-04, loss: 1.13E-03, targ_ctg: 4.42, nnet_ctg: 4.43, Time: 12.37
+Itr: 22900, lr: 9.84E-04, loss: 1.43E-03, targ_ctg: 4.43, nnet_ctg: 4.45, Time: 12.36
+Itr: 23000, lr: 9.84E-04, loss: 9.32E-04, targ_ctg: 4.43, nnet_ctg: 4.45, Time: 12.37
+Itr: 23100, lr: 9.84E-04, loss: 5.91E-04, targ_ctg: 4.45, nnet_ctg: 4.45, Time: 12.37
+Itr: 23200, lr: 9.84E-04, loss: 6.68E-04, targ_ctg: 4.46, nnet_ctg: 4.47, Time: 12.37
+Itr: 23300, lr: 9.84E-04, loss: 1.56E-03, targ_ctg: 4.46, nnet_ctg: 4.45, Time: 12.35
+Itr: 23400, lr: 9.84E-04, loss: 8.11E-04, targ_ctg: 4.42, nnet_ctg: 4.41, Time: 12.36
+Itr: 23500, lr: 9.84E-04, loss: 6.28E-04, targ_ctg: 4.46, nnet_ctg: 4.45, Time: 12.37
+Itr: 23600, lr: 9.84E-04, loss: 9.98E-04, targ_ctg: 4.44, nnet_ctg: 4.44, Time: 12.36
+Itr: 23700, lr: 9.84E-04, loss: 1.60E-03, targ_ctg: 4.40, nnet_ctg: 4.38, Time: 12.36
+Itr: 23800, lr: 9.83E-04, loss: 2.05E-03, targ_ctg: 4.45, nnet_ctg: 4.45, Time: 12.35
+Itr: 23900, lr: 9.83E-04, loss: 1.96E-03, targ_ctg: 4.46, nnet_ctg: 4.45, Time: 12.36
+Itr: 24000, lr: 9.83E-04, loss: 2.75E-03, targ_ctg: 4.44, nnet_ctg: 4.46, Time: 12.36
+Itr: 24100, lr: 9.83E-04, loss: 8.02E-04, targ_ctg: 4.44, nnet_ctg: 4.43, Time: 12.35
+Itr: 24200, lr: 9.83E-04, loss: 3.73E-03, targ_ctg: 4.46, nnet_ctg: 4.49, Time: 12.35
+Itr: 24300, lr: 9.83E-04, loss: 5.85E-04, targ_ctg: 4.42, nnet_ctg: 4.43, Time: 12.34
+Itr: 24400, lr: 9.83E-04, loss: 2.72E-03, targ_ctg: 4.44, nnet_ctg: 4.43, Time: 12.36
+Itr: 24500, lr: 9.83E-04, loss: 4.65E-04, targ_ctg: 4.45, nnet_ctg: 4.45, Time: 12.35
+Itr: 24600, lr: 9.83E-04, loss: 1.86E-03, targ_ctg: 4.44, nnet_ctg: 4.45, Time: 12.36
+Itr: 24700, lr: 9.83E-04, loss: 6.43E-04, targ_ctg: 4.45, nnet_ctg: 4.46, Time: 12.35
+Itr: 24800, lr: 9.83E-04, loss: 5.10E-04, targ_ctg: 4.46, nnet_ctg: 4.47, Time: 12.34
+Itr: 24900, lr: 9.83E-04, loss: 1.34E-03, targ_ctg: 4.45, nnet_ctg: 4.47, Time: 12.37
+Last loss was 0.001088
+Updating target network
+Updating cost-to-go with value iteration
+0.02% (Total time: 13.43)
+11.12% (Total time: 366.00)
+22.24% (Total time: 717.14)
+33.33% (Total time: 1067.99)
+44.45% (Total time: 1419.46)
+55.55% (Total time: 1770.28)
+66.67% (Total time: 2121.97)
+77.76% (Total time: 2473.00)
+88.88% (Total time: 2824.62)
+100.00% (Total time: 3168.98)
+Cost-to-go (mean/min/max): 5.18/0.00/6.04
+Training model for update number 5 for 5000 iterations
+Itr: 25000, lr: 9.83E-04, loss: 7.28E-01, targ_ctg: 5.16, nnet_ctg: 4.42, Time: 8.85
+Itr: 25100, lr: 9.83E-04, loss: 1.06E-02, targ_ctg: 5.17, nnet_ctg: 5.18, Time: 12.51
+Itr: 25200, lr: 9.83E-04, loss: 7.42E-03, targ_ctg: 5.19, nnet_ctg: 5.18, Time: 12.34
+Itr: 25300, lr: 9.82E-04, loss: 5.98E-03, targ_ctg: 5.19, nnet_ctg: 5.18, Time: 12.31
+Itr: 25400, lr: 9.82E-04, loss: 5.39E-03, targ_ctg: 5.17, nnet_ctg: 5.19, Time: 12.31
+Itr: 25500, lr: 9.82E-04, loss: 5.37E-03, targ_ctg: 5.14, nnet_ctg: 5.16, Time: 12.33
+Itr: 25600, lr: 9.82E-04, loss: 4.10E-03, targ_ctg: 5.19, nnet_ctg: 5.19, Time: 12.34
+Itr: 25700, lr: 9.82E-04, loss: 4.45E-03, targ_ctg: 5.21, nnet_ctg: 5.21, Time: 12.35
+Itr: 25800, lr: 9.82E-04, loss: 4.68E-03, targ_ctg: 5.16, nnet_ctg: 5.17, Time: 12.34
+Itr: 25900, lr: 9.82E-04, loss: 4.59E-03, targ_ctg: 5.18, nnet_ctg: 5.15, Time: 12.35
+Itr: 26000, lr: 9.82E-04, loss: 3.06E-03, targ_ctg: 5.21, nnet_ctg: 5.21, Time: 12.35
+Itr: 26100, lr: 9.82E-04, loss: 3.07E-03, targ_ctg: 5.20, nnet_ctg: 5.20, Time: 12.34
+Itr: 26200, lr: 9.82E-04, loss: 2.51E-03, targ_ctg: 5.19, nnet_ctg: 5.19, Time: 12.35
+Itr: 26300, lr: 9.82E-04, loss: 3.26E-03, targ_ctg: 5.19, nnet_ctg: 5.18, Time: 12.36
+Itr: 26400, lr: 9.82E-04, loss: 3.63E-03, targ_ctg: 5.19, nnet_ctg: 5.17, Time: 12.34
+Itr: 26500, lr: 9.82E-04, loss: 3.74E-03, targ_ctg: 5.22, nnet_ctg: 5.21, Time: 12.34
+Itr: 26600, lr: 9.82E-04, loss: 5.38E-03, targ_ctg: 5.23, nnet_ctg: 5.21, Time: 12.34
+Itr: 26700, lr: 9.81E-04, loss: 3.06E-03, targ_ctg: 5.17, nnet_ctg: 5.15, Time: 12.35
+Itr: 26800, lr: 9.81E-04, loss: 4.69E-03, targ_ctg: 5.14, nnet_ctg: 5.16, Time: 12.34
+Itr: 26900, lr: 9.81E-04, loss: 2.57E-03, targ_ctg: 5.17, nnet_ctg: 5.15, Time: 12.35
+Itr: 27000, lr: 9.81E-04, loss: 2.86E-03, targ_ctg: 5.20, nnet_ctg: 5.20, Time: 12.34
+Itr: 27100, lr: 9.81E-04, loss: 3.64E-03, targ_ctg: 5.19, nnet_ctg: 5.19, Time: 12.35
+Itr: 27200, lr: 9.81E-04, loss: 2.48E-03, targ_ctg: 5.18, nnet_ctg: 5.18, Time: 12.35
+Itr: 27300, lr: 9.81E-04, loss: 3.72E-03, targ_ctg: 5.17, nnet_ctg: 5.20, Time: 12.36
+Itr: 27400, lr: 9.81E-04, loss: 4.10E-03, targ_ctg: 5.16, nnet_ctg: 5.19, Time: 12.35
+Itr: 27500, lr: 9.81E-04, loss: 2.67E-03, targ_ctg: 5.19, nnet_ctg: 5.21, Time: 12.34
+Itr: 27600, lr: 9.81E-04, loss: 2.28E-03, targ_ctg: 5.17, nnet_ctg: 5.16, Time: 12.34
+Itr: 27700, lr: 9.81E-04, loss: 3.61E-03, targ_ctg: 5.20, nnet_ctg: 5.18, Time: 12.35
+Itr: 27800, lr: 9.81E-04, loss: 2.76E-03, targ_ctg: 5.19, nnet_ctg: 5.18, Time: 12.35
+Itr: 27900, lr: 9.81E-04, loss: 1.92E-03, targ_ctg: 5.17, nnet_ctg: 5.16, Time: 12.35
+Itr: 28000, lr: 9.81E-04, loss: 2.78E-03, targ_ctg: 5.18, nnet_ctg: 5.20, Time: 12.34
+Itr: 28100, lr: 9.81E-04, loss: 2.20E-03, targ_ctg: 5.19, nnet_ctg: 5.19, Time: 12.35
+Itr: 28200, lr: 9.80E-04, loss: 1.83E-03, targ_ctg: 5.19, nnet_ctg: 5.20, Time: 12.37
+Itr: 28300, lr: 9.80E-04, loss: 1.80E-03, targ_ctg: 5.18, nnet_ctg: 5.19, Time: 12.35
+Itr: 28400, lr: 9.80E-04, loss: 1.76E-03, targ_ctg: 5.19, nnet_ctg: 5.18, Time: 12.37
+Itr: 28500, lr: 9.80E-04, loss: 3.16E-03, targ_ctg: 5.16, nnet_ctg: 5.19, Time: 12.36
+Itr: 28600, lr: 9.80E-04, loss: 2.58E-03, targ_ctg: 5.18, nnet_ctg: 5.17, Time: 12.36
+Itr: 28700, lr: 9.80E-04, loss: 2.34E-03, targ_ctg: 5.21, nnet_ctg: 5.19, Time: 12.34
+Itr: 28800, lr: 9.80E-04, loss: 2.14E-03, targ_ctg: 5.19, nnet_ctg: 5.17, Time: 12.36
+Itr: 28900, lr: 9.80E-04, loss: 1.69E-03, targ_ctg: 5.20, nnet_ctg: 5.20, Time: 12.34
+Itr: 29000, lr: 9.80E-04, loss: 2.14E-03, targ_ctg: 5.21, nnet_ctg: 5.22, Time: 12.35
+Itr: 29100, lr: 9.80E-04, loss: 2.33E-03, targ_ctg: 5.15, nnet_ctg: 5.15, Time: 12.34
+Itr: 29200, lr: 9.80E-04, loss: 2.06E-03, targ_ctg: 5.19, nnet_ctg: 5.19, Time: 12.34
+Itr: 29300, lr: 9.80E-04, loss: 3.52E-03, targ_ctg: 5.15, nnet_ctg: 5.17, Time: 12.34
+Itr: 29400, lr: 9.80E-04, loss: 1.93E-03, targ_ctg: 5.17, nnet_ctg: 5.15, Time: 12.35
+Itr: 29500, lr: 9.80E-04, loss: 2.36E-03, targ_ctg: 5.16, nnet_ctg: 5.15, Time: 12.34
+Itr: 29600, lr: 9.79E-04, loss: 1.32E-03, targ_ctg: 5.17, nnet_ctg: 5.18, Time: 12.35
+Itr: 29700, lr: 9.79E-04, loss: 1.62E-03, targ_ctg: 5.19, nnet_ctg: 5.18, Time: 12.35
+Itr: 29800, lr: 9.79E-04, loss: 2.06E-03, targ_ctg: 5.19, nnet_ctg: 5.19, Time: 12.35
+Itr: 29900, lr: 9.79E-04, loss: 2.59E-03, targ_ctg: 5.21, nnet_ctg: 5.18, Time: 12.34
+Last loss was 0.002294
+Updating target network
+Updating cost-to-go with value iteration
+0.02% (Total time: 19.21)

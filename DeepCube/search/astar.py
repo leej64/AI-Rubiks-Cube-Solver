@@ -1,5 +1,5 @@
 from typing import List, Tuple, Dict, Callable, Optional, Any
-from environment.environment_abstract import Environment, State
+from environments.environment_abstract import Environment, State
 import numpy as np
 from heapq import heappush, heappop
 from subprocess import Popen, PIPE

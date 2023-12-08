@@ -1,7 +1,7 @@
 from utils import data_utils, nnet_utils, env_utils
 from typing import Dict, List, Tuple, Any
 
-from environment.environment_abstract import Environment
+from environments.environment_abstract import Environment
 from updater.updater import Updater
 import torch
 

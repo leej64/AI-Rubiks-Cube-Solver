@@ -20,11 +20,15 @@ Kociemba algorithm (2-phase algorithm)
 Deep Reinforcement Learning,artificial neural network, approximate value
 iteration (DeepCubeA)
 
-Evaluation Plan: Number of moves, with fewer the better. It is known that no initial
+Evaluation Plan: For DeepCube neural network, it focuses on Number of moves, with fewer the better. It is known that no initial
 state requires more than 26 moves in the quarter turn metric (God’s number), so our
-goal is to search a path with moves less than 26.
+goal is to search a path with moves less than 26.  For Kociemba and Thislethwaite, it focuses on correctness. 
 
 File Description
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+For Heuristic and DeepCube neural network
 
 Heuristic/Cube.py: Enviornment for heuristic search. Discarded and NOT used in final work!
 
@@ -55,6 +59,22 @@ utils: Helper classes for data, enviornment, neural network, and search model.
 cudatest.py: For debugging perpose with pytorch execution.
 
 train.sh: Contains terminal instructions to train, search, and compare with optimal solution. You can both use sh file or instructions inside the file on terminal.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+For Kociemba + ThislethWaite Algorithm
+
+README.txt: explaination of how to test the program
+
+Inputs_for_testing.txt: legal states of cube that could be used to test the program
+
+TheCubeSolver.cpp: Solver of the Cube. Give it a state, it return a solution steps
+
+testCube.cpp: test whether a solution step could solve a Cube in given state. (used to test the result from TheCubeSolver.cpp)
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 References
 

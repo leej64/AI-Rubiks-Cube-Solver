@@ -55,6 +55,7 @@ cudatest.py: For debugging perpose with pytorch execution.
 train.sh: Contains terminal instructions to train, search, and compare with optimal solution. You can both use sh file or instructions inside the file on terminal.
 
 References
+
 Korf, Richard E.. “Finding Optimal Solutions to Rubik's Cube Using Pattern Databases.”
 AAAI/IAAI (1997).
 

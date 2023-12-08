@@ -24,6 +24,8 @@ Evaluation Plan: Number of moves, with fewer the better. It is known that no ini
 state requires more than 26 moves in the quarter turn metric (God’s number), so our
 goal is to search a path with moves less than 26.
 
+File Description
+
 Heuristic/Cube.py: Enviornment for heuristic search. Discarded and NOT used in final work!
 
 Heuristic/HeuristicDB.py: Implementation of BFS for database. Discarded and NOT used in final work!

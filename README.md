@@ -21,8 +21,8 @@ Deep Reinforcement Learning,artificial neural network, approximate value
 iteration (DeepCubeA)
 
 Evaluation Plan: Number of moves, with fewer the better. It is known that no initial
-state requires more than 26 moves in the quarter turn metric (God’s number), so our
-goal is to search a path with moves less than 26.
+state requires more than 20 moves in the quarter turn metric (God’s number), so our
+goal is to search a path with moves less than 20.
 
 References
 Korf, Richard E.. “Finding Optimal Solutions to Rubik's Cube Using Pattern Databases.”

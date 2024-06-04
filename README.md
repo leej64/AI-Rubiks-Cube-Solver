@@ -5,8 +5,7 @@ Project Title: Finding Solution to Rubik’s Cube Problem Using AI techniques
 Team member: Junwon Lee junwon.lee@vanderbilt.edu
 Yuesheng Hao yuesheng.hao@vanderbilt.edu
 
-Description: Use the AI techniques to solve the Rubik’s Cube problem. To restore a
-Rubik’s Cube as soon as possible.
+Description: Use of AI techniques to solve the Rubik’s Cube problem, to restore Rubik’s Cube as soon as possible.<br>
 
 Background/Motivation: Rubik’s Cube is a 3 X 3 X 3 cube with different colors on the
 exposed surface of subcubes. Any plane of the cube can be rotated 90 degrees per
